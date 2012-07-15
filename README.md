@@ -3,7 +3,7 @@
 _(c) 4D SAS. Thibaud Arguillere_
 _License: MIT, "Do whatever You Want With the Source Code"_
 
-_Last update: 2012-07-03_
+_Last update: 2012-07-14_
 
 A set of files to be used as [CommonJS](http://www.commonjs.org/) module with [Wakanda](http://www.wakanda.org).
 
@@ -182,8 +182,33 @@ As usual. You know. Things you can't put in other modules.
     isInteger(inString)
     randomForIntegers(inMin, inMax)
 
-## License
+## YMD
+Handling just year, month and day of dates.
 
-Release under the MIT license.
+WARNING: months are numbered from 1 to 12 (not 0 to 11 as in the Date object)
 
-July 3, 2012.
+####Dependencies
+Needs the RichDate module
+
+####Constructor
+        new YMD(year, month, day);
+        new YMD(aYMD);
+        new YMD(aDate);
+        new YMD(aRichDate);
+
+####Properties
+        year
+        month
+        day
+            All properties are read-only
+
+####Instance methods
+
+        addDays(inHowMany)
+        addMonths(inHowMany)
+        compareTo(inOther)
+        equalsTo(inOther)
+        getISOWeekNumber()
+        getMonthName(inAbbr)
+        moveToFirstDayOfMonth()
+        moveToLastDayOfMonth()
