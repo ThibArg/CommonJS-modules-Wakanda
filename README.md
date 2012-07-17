@@ -3,8 +3,6 @@
 _(c) 4D SAS. Thibaud Arguillere_
 _License: MIT, "Do whatever You Want With the Source Code"_
 
-_Last update: 2012-07-14_
-
 A set of files to be used as [CommonJS](http://www.commonjs.org/) module with [Wakanda](http://www.wakanda.org).
 
 As of today, most of the modules also work with any CommonJS compliant application, some as juste pure utilities (RichDate.js for example).
@@ -15,6 +13,9 @@ This is "Work in progress". _But_, still, these modules have been written to sol
 
 As of today, the modules don't extend existing classes. There are two reasons for this choice. First, it is recognized as not-the-best practice to extend _native_ JS objects. Here, the RichDate module does not extend the Date object, it encapsulates a private Date variable. Second, for internal reasons in the C++ of Wakanda Server, some SSJS objects can't be extended as of today. It is the case of the Folder and the File classes. The RichFolder and RichFile utilies also (as RichDate) encapsulates the natibve object.
 
+
+_Last update: 2012-07-17_
+	Bugfix in RichFolder constructor
 
 # Documentation
 
