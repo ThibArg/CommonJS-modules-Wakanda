@@ -14,8 +14,8 @@ This is "Work in progress". _But_, still, these modules have been written to sol
 As of today, the modules don't extend existing classes. There are two reasons for this choice. First, it is recognized as not-the-best practice to extend _native_ JS objects. Here, the RichDate module does not extend the Date object, it encapsulates a private Date variable. Second, for internal reasons in the C++ of Wakanda Server, some SSJS objects can't be extended as of today. It is the case of the Folder and the File classes. The RichFolder and RichFile utilies also (as RichDate) encapsulates the natibve object.
 
 
-_Last update: 2012-07-27_
-	Added toDate() to YMD
+_Last update: 2012-08-01_
+	Bug fix in RichDate.createFromJSONDate()
 
 # Documentation
 
